@@ -1,11 +1,9 @@
 #!/usr/bin/python3
-# Author - Henriette Uwizeyimana
-
 def islower(c):
-    if ord(c) >= ord('a') and ord(c) <= ord('z'):
-        return True
+    if ord(c) >= 97 and ord(c) <= 122:
+        return 1
     else:
-        return False
+        return 0
 ~
 ~
 ~

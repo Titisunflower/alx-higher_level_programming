@@ -1,12 +1,14 @@
 #!/usr/bin/python3
-'''Module for MyInt class.'''
+"""Class MyInt that inherits from int"""
 
 
 class MyInt(int):
-    def __eq__(self, other):
-        '''Override equals, inverting it.'''
-        return int(self) != int(other)
+    """My int class"""
 
-    def __ne__(self, other):
-        '''Override not-equals, inverting it.'''
-        return int(self) == int(other)
+    def __eq__(self, value):
+        """Myint is equal to"""
+        return self.real != value
+
+    def __ne__(self, value):
+        """Myint is diferent to"""
+        return self.real == value

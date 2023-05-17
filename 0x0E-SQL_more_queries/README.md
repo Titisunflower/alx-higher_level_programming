@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>0x0E. SQL - More queries</title>
-</head>
+<head></head>
 <body>
   <h1>Description</h1>
   <p>This project in the High Level Programming series is about:</p>

@@ -1,11 +1,15 @@
+function Hello (language) {
+  const apiUrl = 'https://hellosalut.stefanbohacek.dev/?lang=' + language;
+  $.get(apiUrl, (content, textStatus) => {
+    if (textStatus === 'success') {
+      $('DIV#hello').text(content.hello);
+    }
+  });
+}
+
 $(document).ready(function () {
-	$("INPUT#btn_translate").click(function () {
-		const language_code = $("INPUT#language_code").val();
-		$.getJSON(
-			`https://fourtonfish.com/hellosalut/hello/?lang=${language_code}`,
-			function (data) {
-				$("#hello").text(data.hello);
-			}
-		);
-	});
+  $('#btn_translate').click(() => {
+    const language = $('#language_code').val();
+    Hello(language);
+  });
 });
